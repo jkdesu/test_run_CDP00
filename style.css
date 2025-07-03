@@ -1,6 +1,100 @@
 /* Import Google Fonts - this loads the Roboto font family from Google's servers */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #222;
+    font-size: 18px;
+    line-height: 1.7;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px 24px;
+    background: #fff;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-top: 32px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 32px 0;
+}
+
+a {
+    color: #222;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #888;
+}
+
+button, .button {
+    background: #fff;
+    color: #222;
+    border: 1px solid #222;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    margin-top: 16px;
+}
+
+button:hover, .button:hover {
+    background: #222;
+    color: #fff;
+    border-color: #222;
+}
+
+#messageDisplay {
+    margin-top: 32px;
+    padding: 16px;
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    color: #444;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 16px 4vw;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+}
+
 /* Style the entire body of the webpage */
 body {
   font-family: 'Roboto', sans-serif;  /* Set the font to Roboto, with sans-serif as backup */
